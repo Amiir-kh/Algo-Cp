@@ -1,0 +1,23 @@
+algorithm_Cp
+VAR
+    Phrase: STRING;
+    vowels,i:INTEGER=0;
+    words: INTEGER=0
+    caractere: INTEGER=0
+BEGIN
+    WHILE (Phrase[i]<>".") do
+        read(Phrase);
+        IF (Phrase=" ") THEN
+            words=words+1;
+        END_IF
+        IF (Phrase=STRING) THEN
+            caractere=caractere+1;
+        END_IF
+        IF (Phrase= 'a','e','i','o','u','y') THEN
+            vowels=vowels+1
+        END_IF
+    END_WHILE
+    write ("Nbr of Words:", words)
+    write ("Nbr of Caracteres:", caractere)
+    write ("Nbr of Vowels:", vowels)
+END
